@@ -1,0 +1,246 @@
+$font: 'Inconsolata', sans-serif;
+
+//--Mobile---------------------------------------------
+//-----------------------------------------------------
+body{
+  font-family: $font;
+  font-size: 1rem;
+}
+h1{
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+h2{
+  font-size: 1rem;
+}
+p{
+  text-align: justify;
+  line-height: 1.25rem;
+  margin: 0;
+  span{
+    text-indent: 0;
+    display:inline-block;
+  }
+}
+a{
+  text-decoration: underline;
+}
+.divContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.divContact{
+  margin-bottom: 2rem;
+  max-width: 96vw;
+}
+.divContent{
+  margin-bottom: 2rem;
+  width: 96vw;
+}
+.spanResumeLinks{
+  width: 16vw;
+}
+#divOne, #divTwo, #divThree{
+  width: 100%;
+  overflow: hidden;
+}
+/* Dropdown Button */
+#butTheme{
+    position: absolute;
+    right: 0;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+}
+#butTheme:active, #butTheme:focus{
+  outline: 0;
+}
+/* Dropdown Content (Hidden by Default) */
+.divDropdown {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    top: 2rem;
+    min-width: 160px;
+    z-index: 23;
+    a {
+        padding: 6px 1px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+    }
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show{display:block;}
+//--Div 1---------------------------------------------
+#divLogo{
+  margin:0;
+  img{
+    width: 66.66vw;
+    margin:16.65vw 0;
+  }
+}
+#divEmail{
+  width: 66.66vw;
+  text-align: center;
+  a{
+    text-decoration: none;
+  }
+}
+#divSocial{
+  width: 66.66vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  i{
+    font-size: 2rem;
+  }
+}
+//--Div 2---------------------------------------------
+#ulSkills{
+  padding: 0;
+  // margin: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  li{
+    padding: 1rem;
+    i{
+      font-size: 2em;
+      margin: 0 .375em;
+      vertical-align: -25%;
+    }
+  }
+}
+//--Div 3---------------------------------------------
+.divProjectTitle{
+  h2{
+    display:inline-block;
+    margin-top: 0;
+  }
+  a{
+    display:inline-block;
+    // line-height:1.33rem;
+    float: right;
+  }
+}
+//--Sm Desktop-----------------------------------------
+//-----------------------------------------------------
+@media screen and (min-width: 769px) {
+  body{
+    overflow: hidden;
+  }
+  #divOne, #divTwo, #divThree{
+    width: calc(100vw / 3);
+    height: 100vh;
+    margin: 0;
+  }
+  .divContainer{
+    margin-top: 5.55vw;
+    min-height: calc(100vh - 5.55vw);
+  }
+  .divContact{
+    margin-bottom: auto;
+    max-width: 32vw;
+  }
+  .divContent{
+    margin-bottom: auto;
+    width: 32vw;
+  }
+  //--Div 1---------------------------------------------
+  #divOne{
+    float:left;
+  }
+  #divLogo{
+    margin:0 auto auto auto;
+    img{
+      width: calc(100vw / 9 * 2);
+      margin: auto;
+    }
+  }
+  #divSocial, #divEmail{
+    width: calc(100vw / 9 * 2);
+  }
+  //--Div 2---------------------------------------------
+  #divTwo{
+    display: inline-block;
+  }
+  //--Div 3---------------------------------------------
+  #divThree{
+    float: right;
+  }
+  #ulSkills{
+    li{
+      padding: .75rem;
+    }
+  }
+}
+//--Lg Desktops-----------------------------------------
+//-----------------------------------------------------
+@media screen and (min-width: 1920px) {
+  .divContainer{
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    font-size: 1.125rem;
+  }
+  h1{
+    font-size: 1.125rem;
+  }
+  h2{
+    font-size: 1.125rem;
+  }
+  p{
+    line-height: 1.5rem;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .divContainer{
+    width: 66%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    font-size: 1.25rem;
+  }
+  h1{
+    font-size: 1.25rem;
+  }
+  h2{
+    font-size: 1.25rem;
+  }
+  p{
+    line-height: 1.875rem;
+  }
+  #divSocial{
+    i{
+      font-size: 3rem;
+    }
+  }
+}
+@media screen and (min-width: 2800px) {
+  body{
+    font-size: 2rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  p{
+    line-height: 2.5rem;
+  }
+  #divSocial{
+    i{
+      font-size: 4rem;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <title>WilliamHord.com</title>
+    <!--icons-->
+    <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png?v2=47rbNzXBy4'>
+    <link rel='icon' type='image/png' href='/favicon-32x32.png?v2=47rbNzXBy4' sizes='32x32'>
+    <link rel='icon' type='image/png' href='/favicon-16x16.png?v2=47rbNzXBy4' sizes='16x16'>
+    <link rel='manifest' href='/manifest.json?v2=47rbNzXBy4'>
+    <link rel='mask-icon' href='/safari-pinned-tab.svg?v2=47rbNzXBy4' color='#66d9ef'>
+    <link rel='shortcut icon' href='/favicon.ico?v2=47rbNzXBy4'>
+    <meta name='theme-color' content='#66d9ef'>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://use.fontawesome.com/76b0a3447b.css' media='all'>
+    <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css'>
+    <!-- CSS -->
+    <link rel='stylesheet' href='/css/normalize.css'>
+    <link rel='stylesheet' href='/css/index.css'>
+    <link rel='stylesheet' href='/css/monokai.css'>
+  </head>
+  <body>
+    <div id='divTheme'>
+      <button onclick='changeClick()' id='butTheme'>Theme</button>
+      <div id='divThemeDrop' class='divDropdown'>
+        <a id='butMonokai'>Monokai</a>
+        <a id='butSolarDark'>Solarized Dark</a>
+        <a id='butSolarLight'>Solarized Light</a>
+        <a id='butGrayscale'>Greyscale</a>
+        <a id='butInvisible'>Invisible</a>
+      </div>
+    </div>
+    <div id='divOne'>
+      <div class='divContainer'>
+        <div id='divLogo'>
+          <img id='imgLogo' src='/assets/icon-monokai.svg'>
+        </div>
+        <div class='divContact'>
+          <div id='divEmail'>
+            <a href='mailto:williamhord@gmail.com?Subject=Hello!' target='_top'>
+              <i class='fa fa-envelope'></i><br />
+              <span id='spanEmailText'>
+                Drop me a line at: <br />
+                williamhord@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class='divContact'>
+          <div id='divSocial'>
+            <a href='https://www.linkedin.com/in/williamthord'><i class='fa fa-linkedin'></i></a>
+            <a href='https://www.facebook.com/williamtyhord'><i class='fa fa-facebook'></i></a>
+            <a href='https://medium.com/@williamhord'><i class='fa fa-medium'></i></a>
+            <a href='https://github.com/williamhord'><i class='fa fa-github'></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='divTwo'>
+      <div class='divContainer'>
+        <div class='divContent'>
+          <h1 id='hAbout'>About me</h1>
+            <p class='contentDetail'>
+              Hey, I'm William. I'm a web designer and developer.
+              I graduated from Western Carolina University in 2016 with a BSBA in
+              Computer Information Systems.
+            </p>
+        </div>
+        <div class='divContent'>
+          <h1 id='hResume'>Resume</h1>
+          <p class='contentDetail'>
+            <a href='https://www.williamhord.com/resume2017.8.10.pdf'>pdf</a> |
+            <a href='https://www.williamhord.com/resume2017.8.10.txt'>txt</a>
+          </p>
+        </div>
+        <div class='divContent'>
+          <h1 id='hSkills'>Skills</h1>
+          <ul id='ulSkills' class='contentDetail'>
+            <li><i class='devicon-html5-plain'></i>HTML 5</li>
+            <li><i class='devicon-css3-plain'></i>CSS 3</li>
+            <li><i class='devicon-javascript-plain'></i>Javascript</li>
+            <li><i class='devicon-sass-original'></i>Sass</li>
+            <li><i class='devicon-git-plain'></i>git</li>
+            <li><i class='devicon-linux-plain'></i>Linux</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id='divThree'>
+      <div class='divContainer'>
+        <div class='divContent'>
+          <h1 id='hProjects'>Projects</h1>
+          <div class='divProjectTitle'>
+            <h2>GSAP Animations</h2>
+            <a href='http://codepen.io/williamhord/pen/vKxWLG'>view it!</a>
+          </div>
+          <p class='contentDetail'>
+            I found out about GSAP after exploring a few websites
+            that utilize it. Upon checking out <a href='https://greensock.com/gsap'>GSAP's</a>
+            website, I decided to try it out on my own. More options for
+            playback appear each time the animation plays.
+          </p>
+        </div>
+        <div class='divContent'>
+          <div class='divProjectTitle'>
+            <h2>Collatz Conjecture Tester</h2>
+            <a href='/Collatz.html'>view it!</a>
+          </div>
+          <p class='contentDetail'>
+            <a href='https://youtu.be/5mFpVDpKX70'>Numberphile's video</a> on the Collatz Conjecture inspired me to make this.
+            It's built using <a href='https://silentmatt.com/biginteger/'>BigInteger JS</a> to work around Javascripts relatively
+            small limit of <span>2<sup>53</sup>-1.</span> There is not a limit to the size of the number
+            that someone enters. The only limit is 10000 iterations through the Conjecture.
+            All calculations are done client side so I felt I had to impose some limit
+            to ensure that browsers wouldn't become indefinitely unresponsive.
+          </p>
+        </div>
+        <div class='divContent'>
+          <div class='divProjectTitle'>
+            <h2>HTML5 Boilerplate</h2>
+            <a href='/HTML5Boilerplate17.02.08.html'>view it!</a>
+          </div>
+          <p class='contentDetail'>
+            This is just my basic template I start from when making a new webpage. Based on
+            <a href='https://html5boilerplate.com/'>HTML5 Boilerplate</a>. It's preloaded with
+            <a href='https://necolas.github.io/normalize.css/'>Normalize.css</a>,
+            <a href='http://sass-lang.com/'>Sass</a>,
+            <a href='http://fontawesome.io/'>Font Awesome</a>, a few fonts from
+            <a href='https://fonts.google.com/'>Google Fonts</a>, and some nice
+            <a href='https://codepen.io/sdthornton/pen/wBZdXq'>box shadows</a> based
+            on Material Design.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js'></script>
+    <script src='/js/index.min.js'></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79015680-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

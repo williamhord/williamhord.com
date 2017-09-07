@@ -1,0 +1,18 @@
+body{
+  color: #F8F8F2;
+  background-color: #272822;
+}
+a{color: #F8F8F2;}
+a:hover{color: #66D9EF;}
+#hAbout{color: #A6E22E;}
+#hResume{color: #2AA198;}
+#hSkills{color: #F4BF75;}
+#hProjects{color: #AE81FF;}
+h2{color: #F92672}
+#butTheme, .divDropdown > a{
+  color: #272822;
+  background-color: #F8F8F2;
+}
+.divDropdown > a:hover{
+  color: #2AA198;
+}
