@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <meta http-equiv='x-ua-compatible' content='ie=edge'>
+    <title>WilliamHord.com - Collatz Conjecture</title>
+    <!--icons-->
+    <link rel='apple-touch-icon' sizes='180x180' href='/assets/apple-touch-icon.png?v2=47rbNzXBy4'>
+    <link rel='icon' type='image/png' href='/assets/favicon-32x32.png?v2=47rbNzXBy4' sizes='32x32'>
+    <link rel='icon' type='image/png' href='/assets/favicon-16x16.png?v2=47rbNzXBy4' sizes='16x16'>
+    <link rel='manifest' href='/manifest.json?v2=47rbNzXBy4'>
+    <link rel='mask-icon' href='/assets/safari-pinned-tab.svg?v2=47rbNzXBy4' color='#66d9ef'>
+    <link rel='shortcut icon' href='/assets/favicon.ico?v2=47rbNzXBy4'>
+    <meta name='theme-color' content='#66d9ef'>
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:300|Open+Sans' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel='stylesheet' href='/Collatz/css/normalize.min.css'>
+    <link rel='stylesheet' href='/Collatz/css/index.css'>
+  </head>
+  <body>
+    <div id='divWrapper'>
+      <div id='divContent'>
+        <div id='divTitle'>
+        Collatz Conjecture Number Tester
+        </div>
+        <div class='divInput'>
+          <h1>Please enter a positive integer to test:</h1><br />
+          <input type='text' pattern='[0-9]*' id='input' /><br />
+          <div class='divButPad'>
+            <div class='divButton' id='butCalc'>Calculate</div>
+          </div>
+            WARNING:<br />
+            Extremely large numbers do take longer to calculate and it can appear as
+            your browser has frozen even though it hasn't. The only limit is 10000 iterations which can take upwards of 15 minutes.
+        </div>
+        <div id='divRow'>
+          <div id='divPWrap'>
+            <div class='divMargin'>
+              <h1>Background</h1>
+              <p>
+                'The Collatz conjecture is a conjecture in mathematics
+                named after Lothar Collatz, who first proposed it in 1937.
+                The conjecture can be summarized as follows. Take any positive integer n.
+                If n is even, divide it by 2 to get n / 2. If n is odd, multiply it by 3
+                and add 1 to obtain 3n + 1. Repeat the process indefinitely. The conjecture
+                is that no matter what number you start with, you will always eventually
+                reach 1.'
+              </p>
+                - The <a href='https://en.wikipedia.org/wiki/Collatz_conjecture'>Wikipedia page</a> on the Collatz Conjecture
+            </div>
+          </div>
+          <div id='divVidWrap'>
+            <div class='divMargin'>
+              <div id='divVid'>
+                <iframe src='https://www.youtube.com/embed/5mFpVDpKX70' frameborder='0' allowfullscreen></iframe>
+                <p>
+                 This Numberphile video is what initally got me interested in the Collatz Conjecture and it better explains the problem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id='divOutput'>
+          <div class='divMargin'>
+            <h1>Results</h1><a id='butBottom'>Scroll to Bottom</a>
+            <table id='tableOutput'>
+                <tr>
+                  <th>Step</th>
+                  <th>Equation Used</th>
+                  <th>Answer</th>
+                </tr>
+            </table>
+              <a id='butTop'>Scroll to Top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Load js -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='/Collatz/js/jquery.scrollTo.min.js'></script>
+    <script src='/Collatz/js/BigInteger.min.js'></script>
+    <script src='/Collatz/js/collatz.js'></script>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79015680-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>

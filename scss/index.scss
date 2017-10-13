@@ -1,20 +1,36 @@
 $font: 'Inconsolata', sans-serif;
-
+$white: #F8F8F2;
+$black: #272822;
+$blue: #66D9EF;
+$green: #A6E22E;
+$teal: #2AA198;
+$orange: #F4BF75;
+$purple: #AE81FF;
+$red: #F92672;
 //--Mobile---------------------------------------------
 //-----------------------------------------------------
 body{
   font-family: $font;
   font-size: 1rem;
+  color: $white;
+  background-color: $black;
 }
 h1{
+  visibility: hidden;
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 10px;
 }
+#hAbout{color: $green;}
+#hResume{color: $teal;}
+#hSkills{color: $orange;}
+#hProjects{color: $purple;}
 h2{
   font-size: 1rem;
+  color: $red;
 }
 p{
+  visibility: hidden;
   text-align: justify;
   line-height: 1.25rem;
   margin: 0;
@@ -25,6 +41,10 @@ p{
 }
 a{
   text-decoration: underline;
+  color: $white;
+}
+a:hover{
+  color: $blue;
 }
 .divContainer{
   display: flex;
@@ -80,11 +100,13 @@ a{
 #divLogo{
   margin:0;
   img{
+    visibility: hidden;
     width: 66.66vw;
     margin:16.65vw 0;
   }
 }
 #divEmail{
+  visibility: hidden;
   width: 66.66vw;
   text-align: center;
   a{
@@ -92,6 +114,7 @@ a{
   }
 }
 #divSocial{
+  visibility: hidden;
   width: 66.66vw;
   display: flex;
   justify-content: space-between;
@@ -102,8 +125,8 @@ a{
 }
 //--Div 2---------------------------------------------
 #ulSkills{
+  visibility: hidden;
   padding: 0;
-  // margin: 0;
   list-style: none;
   display: flex;
   flex-flow: row wrap;
@@ -119,6 +142,7 @@ a{
 }
 //--Div 3---------------------------------------------
 .divProjectTitle{
+  visibility: hidden;
   h2{
     display:inline-block;
     margin-top: 0;

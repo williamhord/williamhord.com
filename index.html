@@ -6,33 +6,22 @@
     <meta http-equiv='x-ua-compatible' content='ie=edge'>
     <title>WilliamHord.com</title>
     <!--icons-->
-    <link rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png?v2=47rbNzXBy4'>
-    <link rel='icon' type='image/png' href='/favicon-32x32.png?v2=47rbNzXBy4' sizes='32x32'>
-    <link rel='icon' type='image/png' href='/favicon-16x16.png?v2=47rbNzXBy4' sizes='16x16'>
+    <link rel='apple-touch-icon' sizes='180x180' href='/assets/apple-touch-icon.png?v2=47rbNzXBy4'>
+    <link rel='icon' type='image/png' href='/assets/favicon-32x32.png?v2=47rbNzXBy4' sizes='32x32'>
+    <link rel='icon' type='image/png' href='/assets/favicon-16x16.png?v2=47rbNzXBy4' sizes='16x16'>
     <link rel='manifest' href='/manifest.json?v2=47rbNzXBy4'>
-    <link rel='mask-icon' href='/safari-pinned-tab.svg?v2=47rbNzXBy4' color='#66d9ef'>
-    <link rel='shortcut icon' href='/favicon.ico?v2=47rbNzXBy4'>
+    <link rel='mask-icon' href='/assets/safari-pinned-tab.svg?v2=47rbNzXBy4' color='#66d9ef'>
+    <link rel='shortcut icon' href='/assets/favicon.ico?v2=47rbNzXBy4'>
     <meta name='theme-color' content='#66d9ef'>
     <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='https://use.fontawesome.com/76b0a3447b.css' media='all'>
     <link rel='stylesheet' href='https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css'>
     <!-- CSS -->
-    <link rel='stylesheet' href='/css/normalize.css'>
-    <link rel='stylesheet' href='/css/index.css'>
-    <link rel='stylesheet' href='/css/monokai.css'>
+    <link rel='stylesheet' href='./css/normalize.min.css'>
+    <link rel='stylesheet' href='./css/index.css'>
   </head>
   <body>
-    <div id='divTheme'>
-      <button onclick='changeClick()' id='butTheme'>Theme</button>
-      <div id='divThemeDrop' class='divDropdown'>
-        <a id='butMonokai'>Monokai</a>
-        <a id='butSolarDark'>Solarized Dark</a>
-        <a id='butSolarLight'>Solarized Light</a>
-        <a id='butGrayscale'>Greyscale</a>
-        <a id='butInvisible'>Invisible</a>
-      </div>
-    </div>
     <div id='divOne'>
       <div class='divContainer'>
         <div id='divLogo'>
@@ -72,8 +61,8 @@
         <div class='divContent'>
           <h1 id='hResume'>Resume</h1>
           <p class='contentDetail'>
-            <a href='https://www.williamhord.com/resume2017.8.10.pdf'>pdf</a> |
-            <a href='https://www.williamhord.com/resume2017.8.10.txt'>txt</a>
+            <a href='/assets/resume17.10.11.pdf'>pdf</a> |
+            <a href='/assets/resume17.10.11.txt'>txt</a>
           </p>
         </div>
         <div class='divContent'>
@@ -83,6 +72,8 @@
             <li><i class='devicon-css3-plain'></i>CSS 3</li>
             <li><i class='devicon-javascript-plain'></i>Javascript</li>
             <li><i class='devicon-sass-original'></i>Sass</li>
+            <li><i class="devicon-react-original"></i>React</li>
+            <li><i class="devicon-webpack-plain"></i>Webpack</li>
             <li><i class='devicon-git-plain'></i>git</li>
             <li><i class='devicon-linux-plain'></i>Linux</li>
           </ul>
@@ -99,8 +90,8 @@
           </div>
           <p class='contentDetail'>
             I found out about GSAP after exploring a few websites
-            that utilize it. Upon checking out <a href='https://greensock.com/gsap'>GSAP's</a>
-            website, I decided to try it out on my own. More options for
+            that utilize it. Upon checking out <a href='https://greensock.com/gsap'>GSAP's website</a>,
+            I decided to try it out on my own. More options for
             playback appear each time the animation plays.
           </p>
         </div>
@@ -124,7 +115,7 @@
             <a href='/HTML5Boilerplate17.02.08.html'>view it!</a>
           </div>
           <p class='contentDetail'>
-            This is just my basic template I start from when making a new webpage. Based on
+            This is my basic template I start from when making a basic webpage. Based on
             <a href='https://html5boilerplate.com/'>HTML5 Boilerplate</a>. It's preloaded with
             <a href='https://necolas.github.io/normalize.css/'>Normalize.css</a>,
             <a href='http://sass-lang.com/'>Sass</a>,
@@ -140,7 +131,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TimelineLite.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js'></script>
-    <script src='/js/index.min.js'></script>
+    <script src='./js/index.min.js'></script>
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

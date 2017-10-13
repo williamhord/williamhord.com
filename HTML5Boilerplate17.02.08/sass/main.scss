@@ -1,0 +1,86 @@
+//-----------------------------------------------------
+//--Variables------------------------------------------
+//-----------------------------------------------------
+$colorWhite: #F7F7F7;
+$colorBlack: #1B1B1B;
+$colorPrimary: #3AA3E0;
+$colorSecondary: #F9E98F;
+$colorAccent: #FF6464;
+$colorLink: #2B77A3;
+
+$fontSans: 'Open Sans', sans-serif;
+$fontSerif: 'Tinos', serif;
+$fontHeader: $fontSans;
+//-----------------------------------------------------
+//--Mixins---------------------------------------------
+//-----------------------------------------------------
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+@mixin boxShadow1 {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+@mixin boxShadow2 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+@mixin boxShadow3 {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+//-----------------------------------------------------
+//--General CSS----------------------------------------
+//-----------------------------------------------------
+html{
+  background-color: $colorWhite;
+  color: $colorBlack;
+  font-family: $fontSans;
+  font-size: 1rem;
+}
+a{
+  color: $colorLink;
+  text-decoration: underline;
+}
+.serif{
+  font-family: $fontSerif;
+}
+//-----------------------------------------------------
+//--Mobile---------------------------------------------
+//-----------------------------------------------------
+#divContent{
+  width: 100%;
+  background-color: $colorWhite;
+}
+#divTitle{
+  width:100%;
+  padding: 2rem 0;
+  background-color: $colorPrimary;
+  font-family: $fontHeader;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+//-----------------------------------------------------
+//--Bigger than iPad-----------------------------------
+//-----------------------------------------------------
+@media screen and (min-width: 769px) {
+  #divContent{
+    width: 768px;
+    margin: 2.5rem auto;
+    @include borderRadius(2px);
+    @include boxShadow2;
+  }
+  #divTitle{
+    font-size: 2.5em;
+    @include borderRadius(2px 2px 0 0);
+  }
+}
+//-----------------------------------------------------
+//--Laptop and Larger----------------------------------
+//-----------------------------------------------------
+@media screen and (min-width: 1025px) {
+  #divContent{
+    width: 1024px;
+  }
+}

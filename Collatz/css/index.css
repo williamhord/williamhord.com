@@ -1,0 +1,142 @@
+body {
+  background-color: #F6F2E9;
+  width: 100%;
+  font: 1em "Open Sans", sans-serif; }
+
+h1 {
+  font: 1.5em "Lato", sans-serif; }
+
+p {
+  text-indent: 1.5em; }
+
+a {
+  color: blue;
+  text-decoration: underline; }
+
+.divMargin {
+  margin: 0 1em; }
+
+#divWrapper, #divContent {
+  width: 100%; }
+
+#divTitle {
+  width: 100%;
+  padding: 1em 0;
+  background-color: #EB9532;
+  font: 2.5em "Lato", sans-serif;
+  text-align: center; }
+
+#divRow {
+  padding-top: 1em; }
+
+#divPWrap, #divVidWrap {
+  width: 100%; }
+
+#divVid {
+  margin-top: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0; }
+  #divVid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.divInput {
+  width: 100%;
+  padding-top: 1em;
+  text-align: center; }
+
+.divButPad {
+  padding: 30px 0; }
+
+.divButton {
+  margin: 0px auto;
+  width: 150px;
+  max-width: 300px;
+  height: 40px;
+  font: 1.5em "Lato", sans-serif;
+  line-height: 40px;
+  border-radius: 10px;
+  color: #444;
+  background-color: #EB9532;
+  box-shadow: 0 5px 0 0 #aaa; }
+
+.divButton:active {
+  box-shadow: 0 1px 0 0 #aaa;
+  transform: translate(0px, 4px) !important;
+  -webkit-transform: translate(0, 4px) !important; }
+
+#divOutput {
+  padding-top: 1em;
+  width: 100%; }
+  #divOutput a {
+    cursor: pointer;
+    text-align: center;
+    display: block; }
+
+#tableOutput {
+  margin: 0;
+  table-layout: fixed;
+  width: 100%; }
+  #tableOutput th:nth-child(1) {
+    width: 20%; }
+  #tableOutput th:nth-child(2),
+  #tableOutput th:nth-child(3) {
+    width: 40%; }
+  #tableOutput td:nth-child(1),
+  #tableOutput td:nth-child(2) {
+    text-align: right; }
+  #tableOutput td:nth-child(3) {
+    vertical-align: top; }
+
+tr {
+  width: 100%; }
+
+th {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.25em;
+  font-family: 'Lato', sans-serif; }
+
+td {
+  padding: 2px 10px;
+  white-space: wrap;
+  overflow-wrap: break-word; }
+
+@media screen and (min-width: 960px) {
+  #divContent {
+    width: 900px;
+    margin: 30px auto;
+    -webkit-box-shadow: 15px 15px 50px rgba(68, 68, 68, 0.25);
+    -moz-box-shadow: 15px 15px 50px rgba(68, 68, 68, 0.25);
+    box-shadow: 15px 15px 50px rgba(68, 68, 68, 0.25); }
+
+  #divTitle {
+    font: 2.5em "Lato", sans-serif; }
+
+  #divRow {
+    display: inline-block;
+    padding-top: 1em; }
+
+  #divPWrap {
+    float: left;
+    width: 450px; }
+
+  #divVidWrap {
+    float: right;
+    width: 450px; }
+
+  #divVid {
+    margin-top: 0px; }
+
+  #tableOutput th:nth-child(1) {
+    width: 10%; }
+  #tableOutput th:nth-child(2),
+  #tableOutput th:nth-child(3) {
+    width: 45%; } }
+
+/*# sourceMappingURL=index.css.map */
